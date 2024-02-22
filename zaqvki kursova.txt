@@ -1,0 +1,13 @@
+1. SELECT author_name, nationality FROM authors;
+
+2. SELECT a.author_name, b.title FROM authors a JOIN books b ON(a.author_id = b.author_id);
+
+3. DELETE FROM authors WHERE author_id='7';
+
+4. INSERT INTO publishers(publisher_id, publisher_name, address, phone_number) 
+VALUES ('5', 'Taschen Books', 'Koln, Germany', '+49 30 531255144');
+
+5. UPDATE books SET publication_year=1996 
+WHERE title="Harry Potter and the Philosophers Stone";
+
+DUMP- mysqldump -u root -p kursova_library_2023 > kursova_backup.sql
